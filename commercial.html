@@ -112,7 +112,6 @@
               <option>Bhopal</option>
             </select>
 
-            <!-- search  -->
             <input
               type="search"
               id="search"
@@ -120,40 +119,32 @@
               placeholder="Search upto 3 localities or landmarks"
             />
 
-            <!-- search button  -->
             <div class="submit col-3">
               <i class="fa-solid fa-magnifying-glass"></i>
-              <input type="submit" value="Search" class="" id="submit" />
+              <input type="submit" value="Search" id="submit" />
             </div>
           </div>
 
           <div class="bottom">
             <div class="radios">
-              <input type="radio" name="address" id="fullHouse" />
-              <label for="fullHouse"> Full House</label>
+              <input type="radio" name="address" id="rent" />
+              <label for="rent"> Rent</label>
 
-              <input type="radio" name="address" id="land" />
-              <label for="land">Land/Plot</label>
+              <input type="radio" name="address" id="buy" />
+              <label for="buy">Buy</label>
             </div>
-            <select name="bhk" id="bhk">
-              <option selected>BHK TYPE</option>
-              <option value="">1 RK</option>
-              <option value="">1 BHK</option>
-              <option value="">2 BHK</option>
-              <option value="">3 BHK</option>
-              <option value="">4 BHK</option>
-              <option value="">4+ BHK</option>
+            <select name="propertType" id="propertType">
+              <option selected>Property Type</option>
+              <option value="">Office-space</option>
+              <option value="">Co-working</option>
+              <option value="">Shop</option>
+              <option value="">Showroom</option>
+              <option value="">Industrial Building</option>
+              <option value="">Industrial Shed</option>
+              <option value="">Gowdown/Warehouse</option>
+              <option value="">Other business</option>
+              <option value="">Restaurent/Cafe</option>
             </select>
-
-            <select name="property" id="property">
-              <option selected>Property Status</option>
-              <option>Under Construction</option>
-              <option>Ready</option>
-            </select>
-            <div>
-              <input type="checkbox" id="project" />
-              <label for="project">New Builder Project</label>
-            </div>
           </div>
         </form>
       </section>

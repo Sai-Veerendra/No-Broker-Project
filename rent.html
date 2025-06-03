@@ -100,9 +100,9 @@
       </section>
       <section id="form">
         <form action="#">
-          <div class="top row">
+          <div class="renttop1">
             <!-- select  -->
-            <select name="city" id="city" class="col-3">
+            <select name="city" id="city">
               <option value="banglore">Banglore</option>
               <option>Kolkata</option>
               <option>Chennai</option>
@@ -112,28 +112,25 @@
               <option>Bhopal</option>
             </select>
 
-            <!-- search  -->
             <input
               type="search"
               id="search"
-              class="col-6"
               placeholder="Search upto 3 localities or landmarks"
             />
 
-            <!-- search button  -->
-            <div class="submit col-3">
+            <div class="submit">
               <i class="fa-solid fa-magnifying-glass"></i>
-              <input type="submit" value="Search" class="" id="submit" />
+              <input type="submit" value="Search" id="submit" />
             </div>
           </div>
 
-          <div class="bottom">
+          <div class="bottom-rent">
             <div class="radios">
-              <input type="radio" name="address" id="fullHouse" />
-              <label for="fullHouse"> Full House</label>
+              <input type="radio" name="address" id="fullhouse" />
+              <label for="fullhouse"> Full House</label>
 
-              <input type="radio" name="address" id="pghotel" />
-              <label for="pghotel">PG/Hotel</label>
+              <input type="radio" name="address" id="pg" />
+              <label for="pg">PG/Hostel</label>
 
               <input type="radio" name="address" id="flatmates" />
               <label for="flatmates">Flatmates</label>
@@ -148,15 +145,13 @@
               <option value="">4+ BHK</option>
             </select>
 
-            <select name="property" id="property">
+            <select name="availability" id="availability">
               <option selected>Availability</option>
-              <option>Under Construction</option>
-              <option>Ready</option>
+              <option>Immediate</option>
+              <option>Within 15 days</option>
+              <option>Within 30 days</option>
+              <option>After 30 days</option>
             </select>
-            <div>
-              <input type="checkbox" id="project" />
-              <label for="project">New Builder Project</label>
-            </div>
           </div>
         </form>
       </section>

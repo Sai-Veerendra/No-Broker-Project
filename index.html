@@ -22,7 +22,7 @@
       <div class="d-flex justify-content-between align-items-center w-100 px-3">
         <!-- Logo -->
         <a class="navbar-brand d-flex align-items-center" href="#">
-          <img src="resources/logo.jpg" class="logo" alt="Logo" />
+          <img src="resources/logo.jpg" class="logoIcon" alt="Logo" />
           <span class="fw-bold"
             >NO<span class="sub-span text-secondary fw-semibold"
               >BROKER</span
@@ -32,7 +32,7 @@
 
         <!-- Right Side -->
         <div class="ms-auto d-flex align-items-center">
-          <button class="btn btn-outline-secondary btn-sm me-4">
+          <button class="btn btn-outline-secondary btn-sm me-4 p-2">
             <i class="fas fa-credit-card"></i> | Pay Rent
           </button>
           <button class="btn btn-info btn-sm mr-1 me-4">
@@ -98,49 +98,46 @@
       </section>
       <section id="form">
         <form action="#">
-          <div class="top row">
-            <!-- select  -->
-            <select name="city" id="city" class="col-3">
-              <option value="banglore">Banglore</option>
-              <option>Kolkata</option>
+          <div class="top">
+            <select name="city" id="city">
+              <option value="bangalore">Bangalore</option>
+              <option>Pune</option>
               <option>Chennai</option>
-              <option>Mumbai</option>
+              <option>Gurgaon</option>
               <option>Delhi</option>
               <option>Hyderabad</option>
-              <option>Bhopal</option>
+              <option>Noida</option>
             </select>
 
-            <!-- search  -->
             <input
               type="search"
               id="search"
-              class="col-6"
               placeholder="Search upto 3 localities or landmarks"
             />
 
-            <!-- search button  -->
-            <div class="submit col-3">
+            <div class="submit">
               <i class="fa-solid fa-magnifying-glass"></i>
-              <input type="submit" value="Search" class="" id="submit" />
+              <input type="submit" value="Search" id="submit" />
             </div>
           </div>
 
           <div class="bottom">
             <div class="radios">
               <input type="radio" name="address" id="fullHouse" />
-              <label for="fullHouse"> Full House</label>
+              <label for="fullHouse">Full House</label>
 
               <input type="radio" name="address" id="land" />
               <label for="land">Land/Plot</label>
             </div>
+
             <select name="bhk" id="bhk">
-              <option selected>BHK TYPE</option>
-              <option value="">1 RK</option>
-              <option value="">1 BHK</option>
-              <option value="">2 BHK</option>
-              <option value="">3 BHK</option>
-              <option value="">4 BHK</option>
-              <option value="">4+ BHK</option>
+              <option selected>BHK Type</option>
+              <option>1 RK</option>
+              <option>1 BHK</option>
+              <option>2 BHK</option>
+              <option>3 BHK</option>
+              <option>4 BHK</option>
+              <option>4+ BHK</option>
             </select>
 
             <select name="property" id="property">
@@ -148,6 +145,7 @@
               <option>Under Construction</option>
               <option>Ready</option>
             </select>
+
             <div>
               <input type="checkbox" id="project" />
               <label for="project">New Builder Project</label>
