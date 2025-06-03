@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 35px;
+}
+
+.fw-bold{
+    font-size: 28px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+#persentSign {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.btn-info {
+  background-color: teal;
+  color: white;
+  font-weight: 700;
+}
+
+.menu-icon{
+    font-size: 10px;
+}
+
+.text-decoration-none {
+  border-right: 1px solid #dcdcdc;
+  padding-right: 15px;
+}
+
+/* main design start  */
+.interiors {
+  background-color: #f8e4be;
+  border-radius: 2px;
+}
+
+.user-action {
+  border: 1px solid #dcdcdc;
+  height: 45px;
+}
+.user-action p {
+  font-size: 15px;
+  padding: 5px 20px 10px 20px;
+}
+.user-action p:hover {
+  color: rgb(241, 113, 113);
+  font-weight: bold;
+  border-bottom: 10px solid red;
+  cursor: pointer;
+}
+
+.top {
+  border: 1px solid #dcdcdc;
+  width: 900px;
+}
+
+.top > * {
+  border: none;
+  border-left: 1px solid #dcdcdc;
+  padding: 15px;
+  outline: none;
+  font-weight: 600;
+}
+
+.submit,
+#submit {
+  background-color: rgb(235, 76, 76);
+  color: white;
+  border: none;
+  text-align: center;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  border: 1px solid #dcdcdc;
+  padding: 10px;
+}
+.bottom * {
+  padding: 4px;
+}
+
+
+footer {
+  text-align: center;
+  width: 400px;
+  margin: auto;
+  margin-top: 50px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer-info {
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+}
+.btn-info {
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
