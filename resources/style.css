@@ -63,16 +63,28 @@
 
 .top {
   border: 1px solid #dcdcdc;
-  width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
-.top > * {
+.top > select,
+.top > input[type="search"] {
   border: none;
-  border-left: 1px solid #dcdcdc;
-  padding: 15px;
-  outline: none;
+  padding: 12px 15px;
+  flex: 1;
+  min-width: 150px;
   font-weight: 300;
 }
+
+.top > select:first-child {
+  border-left: none;
+}
+
 
 .submit,
 #submit {
@@ -113,15 +125,7 @@ footer {
   border-radius: 5px;
 }
 
-#form {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
-  border-radius: 10px;
-  font-family: Arial, sans-serif;
-}
+/* Form for buy, commercial */
 
 #form .top {
   display: flex;
@@ -130,23 +134,25 @@ footer {
   margin-bottom: 15px;
 }
 
-#form select,
-#form input[type="search"] {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  flex: 1;
-  font-size: 14px;
+#city {
+  width: 20%;
+}
+
+#search {
+  width: 55%;
 }
 
 #form .submit {
-  display: flex;
-  align-items: center;
   background-color: #f44336;
   color: white;
-  border-radius: 6px;
-  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 15px;
   cursor: pointer;
+  flex-shrink: 0;
+  min-width: 120px;
+  height: 100%;
 }
 
 #form .submit i {
@@ -159,19 +165,77 @@ footer {
   color: white;
   font-weight: bold;
   cursor: pointer;
+  font-size: 16px;
+  padding: 0;
+}
+
+
+/* form for rent */
+
+#form-rent .renttop1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#form-rent .renttop1 select,
+#form-rent .renttop1 input[type="search"] {
+  flex: 1 1 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  min-width: 150px;
+}
+
+#form-rent .renttop1 .submit {
+  display: flex;
+  align-items: center;
+  background-color: #f44336;
+  color: white;
+  border-radius: 6px;
+  padding: 0 15px;
+  cursor: pointer;
+  height: 42px;
+  white-space: nowrap;
+}
+
+#form-rent .renttop1 .submit i {
+  margin-right: 5px;
+}
+
+#form-rent .renttop1 input[type="submit"] {
+  background: transparent;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
   font-size: 14px;
 }
 
-#form .bottom {
+/* Rent form: Flex layout for bottom options */
+#form-rent .bottom-rent {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
   align-items: center;
   justify-content: space-between;
+  border: 1px solid #dcdcdc;
+  padding: 10px;
 }
 
-#form .bottom div,
-#form .bottom select {
-  margin-top: 5px;
+#form-rent .bottom-rent .radios {
+  display: flex;
+  gap: 15px;
   font-size: 14px;
+}
+
+#form-rent .bottom-rent select {
+  font-size: 14px;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  min-width: 150px;
 }
